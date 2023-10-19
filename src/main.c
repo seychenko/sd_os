@@ -3,9 +3,9 @@
 
 enum buffs
 {
-    BF_TAUNT=0;
-    BF_WINDFURY=1;
-    BF_LIFESTEAL=2;
+    BF_TAUNT=0,
+    BF_WINDFURY=1,
+    BF_LIFESTEAL=2
 };
 
 struct effects
