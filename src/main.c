@@ -1,34 +1,15 @@
-#include <stdio.h>
-#include <windows.h>
-
-enum buffs
-{
-    BF_TAUNT=0,
-    BF_WINDFURY=1,
-    BF_LIFESTEAL=2
-};
-
-struct effects
-{
-    int buff;
-};
-
-struct card
-{
-    unsigned int cost;
-    unsigned int health;
-    unsigned int atack;
-    struct effects ef;
-};
+#include "stdafx.h"
 
 int main()
 {
-    printf("Hello brave new world!");
-    printf("something");
+    // Создаем картонки
     struct card c;
-    c.atack=2;
-    c.health=3;
-    c.cost=3;
-    c.ef.buff=BF_LIFESTEAL;
+    c.atack = 2;
+    c.health = 3;
+    c.cost = 3;
+    c.ef.buff = BF_LIFESTEAL;
+
+    // Выводим какие то результаты
+    printf("Nice HS Gameplay bro!");
     return 0;
 }
